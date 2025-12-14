@@ -36,16 +36,7 @@ By a result of **Turaev**, any symplectic map on \(\mathbb{R}^{2n}\) can be appr
 
 ---
 
-### 2. Symplectic Integration
-
-To guarantee symplecticity at the numerical level, we use **symplectic integrators**, primarily:
-- **Leapfrog (Störmer–Verlet) integration**
-
-This ensures that the learned maps remain symplectic **regardless of discretization error**, which is essential for correctness.
-
----
-
-### 3. Optimization Framework
+### 2. Optimization Framework
 
 The learning pipeline is:
 1. Sample points from the boundary of a target domain
@@ -88,7 +79,7 @@ Results are compared against known theoretical capacities (e.g. McDuff–Schlenk
 │   JAX implementation of 4D symplectic optimization with autodiff
 │
 ├── 4D_leapfrog_PyTorch.py
-│   PyTorch implementation using leapfrog (symplectic) integration
+│   PyTorch implementation using leapfrog (symplectic) integration from former code
 │
 ├── 4D_NNSigmoid.py
 │   Neural-network Hamiltonians (sigmoid / tanh activations)
